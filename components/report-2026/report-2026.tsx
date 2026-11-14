@@ -13,6 +13,8 @@ const HERO_METRICS: Record<Variant, { value: string; label: string; sub?: string
     { value: COMBINED.members, label: "Members", sub: "2025: 1,400 | 2026: 2,200" },
     { value: COMBINED.volunteers, label: "Volunteers", sub: "2025: 900 | 2026: 600" },
     { value: COMBINED.events, label: "Events", sub: "2025: 20+ | 2026: 25" },
+    { value: COMBINED.impressionsShort, label: "Impressions (Reach)", sub: "2025: 3.7M | 2026: 7.3M" },
+    { value: "$60.2K CAD", label: "Revenue & Funding", sub: "2025: $5.2K | 2026: $55.0K" },
   ],
   // /2026/annual leads with this year's figures alone.
   "2026": [
@@ -22,6 +24,8 @@ const HERO_METRICS: Record<Variant, { value: string; label: string; sub?: string
     { value: STATS_2026.members, label: "Members" },
     { value: STATS_2026.volunteers, label: "Volunteers" },
     { value: STATS_2026.events, label: "Events" },
+    { value: "7.3M+", label: "Impressions (Reach)" },
+    { value: "$55.0K CAD", label: "Revenue & Funding" },
   ],
 }
 
@@ -60,7 +64,7 @@ export default function Report2026({ variant, shareUrl }: { variant: Variant; sh
               <p className="mx-auto mb-8 max-w-3xl text-base font-medium text-[#405862]">Our 2026 at a glance:</p>
             )}
 
-            <div className="mx-auto mb-8 grid max-w-6xl grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-6">
+            <div className="mx-auto mb-8 grid max-w-6xl grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
               {metrics.map((m, i) => (
                 <div
                   key={m.label}
