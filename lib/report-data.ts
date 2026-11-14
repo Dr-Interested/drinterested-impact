@@ -16,6 +16,9 @@ export const REPORT_2026 = {
   dataAsOf: "November 12, 2026",
   periodLabel: "January 1, 2026 to November 12, 2026",
   pageCount: 22,
+  canvaEmbedUrl: "https://www.canva.com/design/DAHXoe5vcgM/rSqKoWowk0KEwWjM1peaow/view?embed",
+  canvaViewUrl:
+    "https://www.canva.com/design/DAHXoe5vcgM/rSqKoWowk0KEwWjM1peaow/view?utm_content=DAHXoe5vcgM&utm_campaign=designshare&utm_medium=embeds&utm_source=link",
   tagline: "A year of youth led change & impact.",
 }
 
@@ -178,11 +181,3 @@ export const PROGRAMS_2026: Program[] = [
     figures: ["30 youth impacted", "14K reached"],
   },
 ]
-
-export function reportPageImage(n: number) {
-  return `/reports/2026/page-${String(n).padStart(2, "0")}.webp`
-}
-
-export function reportThumbImage(n: number) {
-  return `/reports/2026/thumb-${String(n).padStart(2, "0")}.webp`
-}

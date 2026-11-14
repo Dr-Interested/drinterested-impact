@@ -322,6 +322,7 @@ export default function RootLayout({
         <SeoSchema id="faq-schema" schema={faqSchema} />
 
         {/* Preconnect / DNS-prefetch for the resources the report pages load */}
+        <link rel="preconnect" href="https://www.canva.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
