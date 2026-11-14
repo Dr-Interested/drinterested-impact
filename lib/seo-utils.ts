@@ -127,6 +127,7 @@ export function generateOrganizationSchema() {
       "https://mastodon.social/@drinterested",
       "https://news.impact.drinterested.org/",
       "https://www.drinterested.org/annualreport2025.pdf",
+      "https://impact.drinterested.org/2026/annual",
       "https://impact.drinterested.org/2025/annual",
       "https://impact.drinterested.org",
       "https://chess.drinterested.org/",
@@ -138,6 +139,13 @@ export function generateOrganizationSchema() {
         url: "https://chess.drinterested.org",
         description:
           "The Dr. Interested Simmon Chang Chess (Against Cancer) Club — tournaments and initiatives supporting pediatric cancer research.",
+      },
+      {
+        "@type": "WebSite",
+        name: "2026 Annual Impact Report (Advance Copy)",
+        url: "https://impact.drinterested.org/2026/annual",
+        description:
+          "Dr. Interested's 2026 Annual Impact Report (Advance Copy) showcasing 229,000+ youth impacted in 2026 (389,000+ since 2025), 129 countries and territories, 2,200 members, 328 executives, 25 events, 1,000 mentor hours, and 600 volunteers.",
       },
       {
         "@type": "WebSite",
@@ -176,7 +184,7 @@ export function generateOrganizationSchema() {
     slogan: "Inspiring the Next Generation of Healthcare Professionals",
     numberOfEmployees: {
       "@type": "QuantitativeValue",
-      value: 367,
+      value: 328,
     },
     memberOf: {
       "@type": "Organization",

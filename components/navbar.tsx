@@ -39,7 +39,8 @@ export default function Navbar() {
   // Determine current report from pathname
   const getCurrentReportLabel = () => {
     if (pathname.includes("2025/semi-annual")) return "2025 Semi-Annual"
-    if (pathname.includes("2025/annual") || pathname === "/") return "2025 Annual"
+    if (pathname.includes("2025/annual")) return "2025 Annual"
+    if (pathname.includes("2026/annual") || pathname === "/") return "2026 Annual"
     return "Reports"
   }
 
@@ -105,15 +106,13 @@ export default function Navbar() {
               <DropdownMenuSeparator />
 
               <DropdownMenuGroup>
-                <DropdownMenuLabel className="text-xs font-semibold text-gray-500">2025</DropdownMenuLabel>
+                <DropdownMenuLabel className="text-xs font-semibold text-gray-500">2026</DropdownMenuLabel>
                 <DropdownMenuItem asChild>
-                  <Link href="/" className="cursor-pointer hover:bg-[#4ecdc4]/10">
+                  <Link href="/2026/annual" className="cursor-pointer hover:bg-[#4ecdc4]/10 flex items-center justify-between gap-2">
                     Annual Report
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/2025/semi-annual" className="cursor-pointer hover:bg-[#4ecdc4]/10">
-                    Semi-Annual Report
+                    <span className="rounded-full bg-[#4ecdc4]/15 px-2 py-0.5 text-[10px] font-semibold text-[#405862]">
+                      Advance Copy
+                    </span>
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuGroup>
@@ -121,12 +120,16 @@ export default function Navbar() {
               <DropdownMenuSeparator />
 
               <DropdownMenuGroup>
-                <DropdownMenuLabel className="text-xs font-semibold text-gray-500">2026</DropdownMenuLabel>
-                <DropdownMenuItem disabled className="text-gray-400 cursor-not-allowed">
-                  Annual Report (Coming Soon)
+                <DropdownMenuLabel className="text-xs font-semibold text-gray-500">2025</DropdownMenuLabel>
+                <DropdownMenuItem asChild>
+                  <Link href="/2025/annual" className="cursor-pointer hover:bg-[#4ecdc4]/10">
+                    Annual Report
+                  </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem disabled className="text-gray-400 cursor-not-allowed">
-                  Semi-Annual Report (Coming Soon)
+                <DropdownMenuItem asChild>
+                  <Link href="/2025/semi-annual" className="cursor-pointer hover:bg-[#4ecdc4]/10">
+                    Semi-Annual Report
+                  </Link>
                 </DropdownMenuItem>
               </DropdownMenuGroup>
             </DropdownMenuContent>
@@ -137,7 +140,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <div className="hidden md:flex items-center gap-1 text-xs text-gray-600 bg-[#4ecdc4]/10 px-3 py-1 rounded-full">
             <div className="w-2 h-2 bg-[#4ecdc4] rounded-full animate-pulse" />
-            <span>Comprehensive Impact</span>
+            <span>2026 Advance Copy</span>
           </div>
 
           <div className="flex items-center gap-2" role="group" aria-label="Social media links">

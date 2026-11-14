@@ -12,17 +12,20 @@ import { generateOrganizationSchema } from "@/lib/seo-utils"
 
 const inter = Inter({ subsets: ["latin"] })
 
-const OG_IMAGE = "https://impact.drinterested.org/impact-report-preview.png"
-const REPORT_MODIFIED = "2026-01-07T00:00:00.000Z"
+const OG_IMAGE = "https://impact.drinterested.org/impact-report-2026-preview.png"
+const REPORT_PUBLISHED = "2026-11-14T00:00:00.000Z"
+const REPORT_URL = "https://impact.drinterested.org/2026/annual"
 
 export const metadata: Metadata = {
   title: {
-    default: "Dr. Interested 2025 Annual Impact Report | Healthcare Education Impact Assessment",
+    default: "Dr. Interested 2026 Annual Impact Report (Advance Copy) | Youth Led Impact",
     template: "%s | Dr. Interested Impact Report",
   },
   description:
-    "Explore Dr. Interested's comprehensive 2025 Annual Impact Report (January 7, 2025 - January 7, 2026) showcasing measurable outcomes in healthcare education. Discover how we've impacted 160,000+ individuals through mentorship programs, research opportunities, and career development initiatives. View detailed metrics and community impact data from 900 volunteers across 106 countries.",
+    "Read the Advance Copy of Dr. Interested's 2026 Annual Impact Report: 229,000+ youth impacted in 2026 across 129 countries and territories, with 328 executives, 2,200 members, 600 volunteers and 1,000 mentor hours. Since 2025, we have impacted 389,000+ youth with 414 unique executives.",
   keywords: [
+    "Dr. Interested 2026 annual impact report",
+    "Dr. Interested 2026 impact report advance copy",
     "Dr. Interested 2025 annual impact report",
     "healthcare education impact assessment",
     "high school medical mentorship results",
@@ -33,11 +36,12 @@ export const metadata: Metadata = {
     "healthcare education nonprofit impact",
     "healthcare workforce development impact",
     "healthcare education community impact",
-    "367 executives healthcare education",
-    "1400 members Dr. Interested",
-    "106 countries healthcare impact",
-    "160000 impacted healthcare education",
-    "900 volunteers healthcare education",
+    "328 executives Dr. Interested",
+    "2200 members Dr. Interested",
+    "129 countries youth impact",
+    "229000 youth impacted 2026",
+    "389000 youth impacted since 2025",
+    "youth in policy and career development",
   ],
   authors: [
     { name: "Adil Mukhi", url: "https://www.drinterested.org/members" },
@@ -51,16 +55,16 @@ export const metadata: Metadata = {
     type: "article",
     locale: "en_US",
     url: "https://impact.drinterested.org",
-    title: "Dr. Interested 2025 Annual Impact Report - Transforming Healthcare Education",
+    title: "Dr. Interested 2026 Annual Impact Report: Advance Copy",
     description:
-      "Discover how Dr. Interested impacted 160,000+ individuals across 106 countries through healthcare education. View comprehensive metrics from 367 executives, 1400 members, 900 volunteers, and 400+ mentor hours in our 2025 Annual Impact Report.",
+      "229,000+ youth impacted in 2026 across 129 countries and territories, and 389,000+ since 2025. Read the Advance Copy of Dr. Interested's 2026 Annual Impact Report.",
     siteName: "Dr. Interested Impact Report",
     images: [
       {
         url: OG_IMAGE,
         width: 1200,
         height: 1200,
-        alt: "Dr. Interested 2025 Annual Impact Report - Comprehensive Healthcare Education Impact Assessment",
+        alt: "Cover of the Advance Copy of the Dr. Interested 2026 Annual Impact Report",
         type: "image/png",
       },
     ],
@@ -69,13 +73,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@DrInterested",
     creator: "@DrInterested",
-    title: "Dr. Interested 2025 Annual Impact Report - Healthcare Education Excellence",
+    title: "Dr. Interested 2026 Annual Impact Report (Advance Copy)",
     description:
-      "📊 Our 2025 Annual Impact Report is here! 160,000+ impacted | 900 volunteers | 106 countries | 367 executives | 1400 members. #HealthcareEducation #ImpactReport",
+      "Our 2026 Annual Impact Report Advance Copy is here! 229,000+ youth impacted | 129 countries | 328 executives | 2,200 members | 389,000+ since 2025 #ImpactReport #YouthLed",
     images: [
       {
         url: OG_IMAGE,
-        alt: "Dr. Interested 2025 Annual Impact Report",
+        alt: "Dr. Interested 2026 Annual Impact Report (Advance Copy)",
         width: 1200,
         height: 1200,
       },
@@ -106,7 +110,7 @@ export const metadata: Metadata = {
   ],
   manifest: "/manifest.webmanifest",
   generator: "Next.js",
-  applicationName: "Dr. Interested Annual Impact Report",
+  applicationName: "Dr. Interested Impact Reports",
   referrer: "origin-when-cross-origin",
   metadataBase: new URL("https://impact.drinterested.org"),
   other: {
@@ -131,20 +135,21 @@ const impactReportSchema = {
   "@context": "https://schema.org",
   "@type": "Report",
   "@id": "https://impact.drinterested.org/#report",
-  name: "Dr. Interested 2025 Annual Impact Report",
-  headline: "Dr. Interested 2025 Annual Impact Report - Healthcare Education Outcomes",
+  name: "Dr. Interested 2026 Annual Impact Report",
+  headline: "Dr. Interested 2026 Annual Impact Report (Advance Copy)",
+  version: "Advance Copy",
   description:
-    "Comprehensive impact assessment of Dr. Interested's healthcare education programs from January 7, 2025 to January 7, 2026, showcasing 160,000+ individuals impacted, 900 volunteers, 367 executives, 1400 members across 106 countries, and 400+ mentor hours.",
-  url: "https://impact.drinterested.org/2025/annual",
-  datePublished: "2026-01-07T00:00:00.000Z",
-  dateModified: REPORT_MODIFIED,
+    "The Advance Copy of Dr. Interested's 2026 Annual Impact Report, with data as of November 12, 2026: 229,000+ youth impacted, 129 countries and territories, 328 executives, 2,200 members, 600 volunteers, 25 events and 1,000 mentor hours. Combined with 2025: 389,000+ youth impacted and 414 unique executives.",
+  url: REPORT_URL,
+  datePublished: REPORT_PUBLISHED,
+  dateModified: REPORT_PUBLISHED,
   inLanguage: "en-US",
   image: {
     "@type": "ImageObject",
     url: OG_IMAGE,
     width: 1200,
     height: 1200,
-    caption: "Dr. Interested 2025 Annual Impact Report Cover",
+    caption: "Dr. Interested 2026 Annual Impact Report (Advance Copy) Cover",
   },
   author: {
     "@type": "Person",
@@ -199,7 +204,7 @@ const impactReportSchema = {
   },
   potentialAction: {
     "@type": "ReadAction",
-    target: "https://impact.drinterested.org/2025/annual",
+    target: REPORT_URL,
   },
 }
 
@@ -222,8 +227,8 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "2025 Annual Report",
-      item: "https://impact.drinterested.org/2025/annual",
+      name: "2026 Annual Report",
+      item: REPORT_URL,
     },
   ],
 }
@@ -235,7 +240,7 @@ const websiteSchema = {
   url: "https://impact.drinterested.org",
   name: "Dr. Interested Impact Reports",
   description:
-    "Dr. Interested's impact reports — measurable healthcare education outcomes across 160,000+ individuals, 900 volunteers, and 106 countries.",
+    "Dr. Interested's impact reports: 389,000+ youth impacted since 2025 across 129 countries and territories, with 414 unique executives and 1,500 volunteers.",
   publisher: {
     "@type": "Organization",
     name: "Dr. Interested",
@@ -244,7 +249,7 @@ const websiteSchema = {
   inLanguage: "en-US",
   mainEntity: {
     "@type": "Report",
-    name: "Dr. Interested 2025 Annual Impact Report",
+    name: "Dr. Interested 2026 Annual Impact Report",
   },
 }
 
@@ -254,10 +259,10 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "What is Dr. Interested's 2025 Annual Impact Report?",
+      name: "What is Dr. Interested's 2026 Annual Impact Report?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Dr. Interested's 2025 Annual Impact Report is a comprehensive assessment of our healthcare education programs' effectiveness from January 7, 2025 to January 7, 2026, showcasing 160,000+ individuals impacted, program growth metrics, and global community impact data across 106 countries.",
+        text: "The 2026 Annual Impact Report, released as an Advance Copy in November 2026, covers Dr. Interested's year across its three pillars: career development, youth in policy, and community. With data as of November 12, 2026, it reports 229,000+ youth impacted across 129 countries and territories, 25 events, 1,000 mentor hours, and a net surplus of $1,546.34 CAD.",
       },
     },
     {
@@ -265,7 +270,7 @@ const faqSchema = {
       name: "How many individuals has Dr. Interested impacted?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Dr. Interested has impacted 160,000+ individuals through our healthcare education programs, volunteer initiatives, and mentorship experiences. Our organization includes 367 executives, 1400 members, and 900 volunteers across 106 countries.",
+        text: "Across 2025 and 2026 combined, Dr. Interested has impacted 389,000+ youth (160,000+ in 2025 and 229,000+ in 2026). In 2026 our community included 328 executives, 2,200 members, and 600 volunteers across 129 countries and territories, with 414 unique executives across both years.",
       },
     },
     {
