@@ -2,10 +2,10 @@ import type { MetadataRoute } from "next"
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Dr. Interested 2025 Impact Report",
+    name: "Dr. Interested Impact Reports",
     short_name: "Dr. Interested Impact",
     description:
-      "Dr. Interested's 2025 Annual Impact Report — achievements in healthcare education across 160,000+ individuals in 106 countries, with 367 executives, 1,400 members, and 900 volunteers.",
+      "Dr. Interested's 2026 Annual Impact Report (Advance Copy): 229,000+ youth impacted in 2026 and 389,000+ since 2025, across 129 countries and territories.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

@@ -26,8 +26,8 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-gray-300 mb-6 max-w-md leading-relaxed">
-              Empowering high school students to explore healthcare careers through comprehensive education, mentorship
-              programs, and hands-on experiences. Building the diverse healthcare workforce of tomorrow.
+              A youth led global community helping young people explore careers in wellness, take part in the policy
+              decisions that shape their lives, and find a safe and open space to belong.
             </p>
             <div className="flex items-center gap-4">
               <Link
@@ -89,6 +89,22 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
+                  href="/2026/annual"
+                  className="text-gray-300 hover:text-white transition-colors flex items-center gap-1"
+                >
+                  2026 Annual Report (Advance Copy)
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/2026.pdf"
+                  className="text-gray-300 hover:text-white transition-colors flex items-center gap-1"
+                >
+                  2026 Report PDF
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/2025/annual"
                   className="text-gray-300 hover:text-white transition-colors flex items-center gap-1"
                 >
@@ -102,9 +118,6 @@ export default function Footer() {
                 >
                   2025 Semi-Annual Report
                 </Link>
-              </li>
-              <li>
-                <span className="text-gray-400 text-sm">New reports coming soon</span>
               </li>
             </ul>
           </div>

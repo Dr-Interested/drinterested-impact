@@ -7,6 +7,14 @@ export default function AnnualReportClient() {
       <section className="bg-gradient-to-br from-[#f5f1eb] via-white to-[#f0f9ff] py-12 md:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
+            <a
+              href="/"
+              className="mb-6 flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 rounded-lg bg-[#405862] px-4 py-3 text-sm text-white shadow-md transition hover:bg-[#334852] max-w-2xl mx-auto"
+            >
+              <span className="font-semibold text-[#4ecdc4]">New:</span>
+              <span>The 2026 Annual Impact Report (Advance Copy) is out. Read it now &rarr;</span>
+            </a>
+
             <div className="inline-flex items-center gap-2 bg-[#4ecdc4]/10 text-[#405862] px-4 py-2 rounded-full text-sm font-medium mb-6">
               <div className="w-2 h-2 bg-[#4ecdc4] rounded-full animate-pulse"></div>
               2025 Annual Report • January 2026
